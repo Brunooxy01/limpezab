@@ -26,6 +26,12 @@ No Windows PowerShell 5.1 ou PowerShell 7:
 
 O projeto usa o compilador C# já disponível no PowerShell, sem exigir a instalação do SDK do .NET.
 
+O ícone-fonte está em `assets/limpezaB.png`. Para regenerar o arquivo `.ico` com resoluções entre 16 e 256 pixels:
+
+```powershell
+.\tools\make-icon.ps1
+```
+
 ## Segurança
 
 O programa valida que arquivos removidos continuam dentro da pasta temporária, ignora links e arquivos de nuvem offline e testa se o arquivo está em uso. Arquivos pessoais grandes são apenas listados. Processos protegidos do Windows não podem ser selecionados e processos comuns só recebem uma solicitação de encerramento normal depois de confirmação explícita.
